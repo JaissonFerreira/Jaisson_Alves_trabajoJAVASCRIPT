@@ -1,0 +1,26 @@
+[
+    {
+      "titulo": "Nuevo Estilo en Tendencia",
+      "descripcion": "Descubre el nuevo corte que está arrasando en 2024.",
+      "fecha": "2024-04-01",
+      "imagen": "img/imagem1.png"
+    },
+    {
+      "titulo": "Conoce a Nuestro Nuevo Barbero",
+      "descripcion": "Damos la bienvenida a Juan Pérez, un experto en barbería con 10 años de experiencia.",
+      "fecha": "2024-04-05",
+      "imagen": "img/imagem2.png"
+    },
+    {
+      "titulo": "Productos Exclusivos para el Cuidado de tu Barba",
+      "descripcion": "Nueva línea de aceites y bálsamos disponibles en nuestra tienda.",
+      "fecha": "2024-04-07",
+      "imagen": "img/productos.png"
+    },
+    {
+      "titulo": "Evento Especial: Noche de Barbería",
+      "descripcion": "Únete a nosotros para una noche de cortes, música y premios.",
+      "fecha": "2024-04-10",
+      "imagen": "img/evento.png"
+    }
+  ]

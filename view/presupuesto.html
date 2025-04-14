@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Presupuesto - Barbearia Ficticia</title>
+  <link rel="stylesheet" href="../css/estilos.css">
+  <link href="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/css/lightbox.min.css" rel="stylesheet">
+</head>
+<body>
+<header id="header">
+  <nav id="nav-menu">
+    <div class="logo-container">
+      <img src="../img/LOGO_BARBEARIA.webp" alt="Logo Barbearia Ficticia" id="logo-img">
+      <h1 class="logo-text">Barbearia FICTICIA</h1>
+    </div>
+    <ul class="nav-list">
+      <li><a href="../index.html">Inicio</a></li>
+      <li><a href="portfolio.html">Galería</a></li>
+      <li><a href="presupuesto.html" class="active">Presupuesto</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main-content">
+  <div class="cita-previa">
+    <h2>Solicitar Presupuesto</h2>
+    <p>Por favor, complete el siguiente formulario para solicitar un presupuesto.</p>
+    <p>Recuerde que los campos marcados con <span class="required">*</span> son obligatorios.</p>
+  
+    <form id="quote-form" method="post">
+      <fieldset>
+        <legend>Datos de Contacto</legend>
+        
+        <label for="nombre">*Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required class="form-input">
+        <span class="error-message"></span>
+
+        <label for="apellidos">*Apellidos:</label>
+        <input type="text" id="apellidos" name="apellidos" required class="form-input">
+        <span class="error-message"></span>
+
+        <label for="telefono">*Teléfono de contacto:</label>
+        <input type="tel" id="telefono" name="telefono" required class="form-input">
+        <span class="error-message"></span>
+
+        <label for="email">*Correo electrónico:</label>
+        <input type="email" id="email" name="email" required class="form-input">
+        <span class="error-message"></span>
+      </fieldset>
+
+      <div class="productos-container">
+        <h2>Nuestros Productos</h2>
+        <div class="productos-image-container">
+          <a href="portfolio.html" class="productos-link">
+            <img src="../img/PRODUTOS_BARBEARIA.png" alt="Productos de la Barbearia" class="productos-image">
+          </a>
+        </div>
+      </div>
+
+      <fieldset>
+        <legend>Detalles del Presupuesto</legend>
+        
+        <div class="servicios">
+          <h3>Servicios Disponibles</h3>
+          <div class="checkbox-group">
+            <label>
+              <input type="checkbox" name="productos" value="corte">
+              Corte (15€)
+            </label>
+            <label>
+              <input type="checkbox" name="productos" value="afeitado">
+              Afeitado (10€)
+            </label>
+            <label>
+              <input type="checkbox" name="productos" value="color">
+              Color (30€)
+            </label>
+            <label>
+              <input type="checkbox" name="productos" value="barba">
+              Barba (12€)
+            </label>
+          </div>
+        </div>
+
+        <div class="extras">
+          <h3>Productos Extra</h3>
+          <div class="checkbox-group">
+            <label class="tooltip-container">
+              <input type="checkbox" name="extras" value="jabon_liquido">
+              1 - Jabón Líquido para Barba (12€)
+              <span class="tooltip">Un jabón líquido especialmente formulado para limpiar y suavizar la barba, eliminando impurezas sin resecar la piel. Ideal para el uso diario antes del afeitado.</span>
+            </label>
+            <label class="tooltip-container">
+              <input type="checkbox" name="extras" value="brocha_afeitar">
+              2 - Brocha de Afeitar (18€)
+              <span class="tooltip">Brocha clásica de afeitar con cerdas suaves, perfecta para aplicar espuma o jabón de afeitar. Ayuda a levantar el vello facial para un afeitado más preciso y cómodo.</span>
+            </label>
+            <label class="tooltip-container">
+              <input type="checkbox" name="extras" value="crema_hidratante">
+              3 - Crema Hidratante para Rostro y Barba (15€)
+              <span class="tooltip">Loción cremosa para hidratar tanto la piel como la barba. Contiene ingredientes nutritivos que mantienen la piel suave y la barba con un aspecto saludable.</span>
+            </label>
+            <label class="tooltip-container">
+              <input type="checkbox" name="extras" value="cera_barba">
+              4 - Cera para Barba y Bigote (14€)
+              <span class="tooltip">Cera modeladora para dar forma y fijación al bigote y la barba. Ofrece un acabado natural y un aroma sutil, ideal para mantener el estilo durante todo el día.</span>
+            </label>
+            <label class="tooltip-container">
+              <input type="checkbox" name="extras" value="aceite_barba">
+              5 - Aceite para Barba (16€)
+              <span class="tooltip">Aceite nutritivo que hidrata profundamente la barba y la piel debajo de ella. Reduce la picazón, suaviza los vellos y deja un brillo saludable sin sensación grasosa.</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="plazo">
+          <label for="fecha">*Fecha de la cita:</label>
+          <input type="date" id="fecha" name="fecha" required class="form-input">
+          
+          <label for="hora">*Hora de la cita:</label>
+          <input type="time" id="hora" name="hora" required class="form-input">
+        </div>
+
+        <div class="presupuesto-total">
+          <h3>Presupuesto Total:</h3>
+          <p id="presupuesto-final">0.00€</p>
+          <p class="entrega-nota">Los productos seleccionados serán entregados el día de la cita en la barbearía.</p>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Condiciones y Envío</legend>
+        
+        <label for="privacidad" class="checkbox-label">
+          <input type="checkbox" id="privacidad" name="privacidad" required>
+          Acepto la Política de privacidad
+        </label>
+
+        <div class="form-buttons">
+          <button type="submit" class="submit-button">Enviar Presupuesto</button>
+          <button type="reset" class="reset-button">Limpiar Formulario</button>
+        </div>
+      </fieldset>
+    </form>
+  </div>
+</main>
+
+<footer id="footer">
+  <p>Síguenos en:</p>
+  <a href="https://www.facebook.com" target="_blank" class="social-link"><img src="../img/facebook-logo.png" alt="Facebook"></a>
+  <a href="https://www.instagram.com" target="_blank" class="social-link"><img src="../img/instagram-logo.png" alt="Instagram"></a>
+  <p>Dirección: Calle Ejemplo, 123, Ciudad</p>
+  <p><a href="aviso_legal.html" class="legal-link">Aviso legal</a></p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/js/lightbox.min.js"></script>
+<script src="../js/presupuesto.js"></script>
+</body>
+</html>

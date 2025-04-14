@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto - Barbearia Ficticia</title>
+  <link rel="stylesheet" href="../css/estilos.css">
+  <link rel="stylesheet" href="../css/contacto.css">
+</head>
+<body>
+<header id="header">
+  <nav id="nav-menu">
+    <div class="logo-container">
+      <img src="../img/LOGO_BARBEARIA.webp" alt="Logo Barbearia Ficticia" id="logo-img">
+      <h1 class="logo-text">Barbearia FICTICIA</h1>
+    </div>
+    <ul class="nav-list">
+      <li><a href="../index.html">Inicio</a></li>
+      <li><a href="portfolio.html">Galería</a></li>
+      <li><a href="presupuesto.html">Presupuesto</a></li>
+      <li><a href="contacto.html" class="active">Contacto</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main-content">
+  <div class="container">
+    <h2>Contacto</h2>
+    <p>Estamos ubicados en el corazón de la ciudad. Visítanos o contáctanos para más información.</p>
+    
+    <div id="map"></div>
+    
+    <div class="contact-container">
+      <div class="contact-info">
+        <h3>Información de Contacto</h3>
+        <div class="contact-details">
+          <p><i>📍</i> Calle Principal, 123, 28001 Madrid, España</p>
+          <p><i>📞</i> +34 912 345 678</p>
+          <p><i>✉️</i> info@barbeariaficticia.com</p>
+        </div>
+        
+        <div class="opening-hours">
+          <h3>Horario de Apertura</h3>
+          <table>
+            <tr>
+              <th>Día</th>
+              <th>Horario</th>
+            </tr>
+            <tr>
+              <td>Lunes - Viernes</td>
+              <td>9:00 - 20:00</td>
+            </tr>
+            <tr>
+              <td>Sábado</td>
+              <td>10:00 - 18:00</td>
+            </tr>
+            <tr>
+              <td>Domingo</td>
+              <td>Cerrado</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      
+      <div class="contact-form">
+        <h3>Calcular Ruta</h3>
+        <div class="route-form">
+          <p>Introduce tu ubicación para calcular la ruta hasta nuestra barbearía:</p>
+          <input type="text" id="origin" placeholder="Tu dirección de origen">
+          <button id="calculate-route">Calcular Ruta</button>
+        </div>
+        
+        <h3>Envíanos un Mensaje</h3>
+        <form id="contact-form">
+          <label for="name">Nombre:</label>
+          <input type="text" id="name" name="name" required class="form-input">
+          
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required class="form-input">
+          
+          <label for="subject">Asunto:</label>
+          <input type="text" id="subject" name="subject" required class="form-input">
+          
+          <label for="message">Mensaje:</label>
+          <textarea id="message" name="message" required class="form-textarea"></textarea>
+          
+          <button type="submit" class="submit-button">Enviar Mensaje</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer id="footer">
+  <p>Síguenos en:</p>
+  <a href="https://www.facebook.com" target="_blank" class="social-link"><img src="../img/facebook-logo.png" alt="Facebook"></a>
+  <a href="https://www.instagram.com" target="_blank" class="social-link"><img src="../img/instagram-logo.png" alt="Instagram"></a>
+  <p>Dirección: Calle Principal, 123, Madrid</p>
+  <p><a href="aviso_legal.html" class="legal-link">Aviso legal</a></p>
+</footer>
+
+<!-- Google Maps API -->
+<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+<script src="../js/contacto.js"></script>
+</body>
+</html>

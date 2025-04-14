@@ -1,0 +1,520 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Imagem Logo*/
+/* Logo e contêiner do logo */
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; /* Espaçamento entre o logo e o texto */
+}
+
+#logo-img {
+  width: 100px; /* Tamanho do logo */
+  height: auto;
+  object-fit: contain;
+}
+
+.logo-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+/* Centraliza o conteúdo do menu */
+#nav-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+/* Corpo */
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+  color: #333;
+  line-height: 1.6;
+  background: linear-gradient(135deg, #aaaaaa, #888888); /* Gradiente escuro e elegante */
+  background-color: #f2f2f2; /* Cor de fallback */
+}
+
+
+/* Cabeçalho */
+#header {
+  background-image: url('../img/background_header.png');
+  background-size: cover;
+  background-position: center;
+  color: #fff; /* Para garantir contraste no texto */
+}
+
+
+#nav-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.nav-list {
+  list-style-type: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-list a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem;
+  transition: background-color 0.3s;
+}
+
+.nav-list a:hover {
+  background-color: #555;
+  border-radius: 5px;
+}
+
+/* Conteúdo principal */
+#main-content {
+  flex: 1;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.section {
+  margin-bottom: 2rem;
+}
+
+.active {
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+  background-color: #555;
+  font-weight: bold;
+  color: #ff5733;
+  border-bottom: 2px solid #ff5733; /* Puede ser una línea o cualquier otra indicación visual */
+}
+
+h2 {
+  font-size: 2rem;
+  color: #333;
+  border-bottom: 2px solid #333;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+}
+
+p {
+  margin-bottom: 1rem;
+  color: #555;
+}
+
+/* Galería */
+.grid-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.gallery-item {
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.gallery-item:hover {
+  transform: scale(1.05);
+}
+
+.gallery-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Formulário */
+#quote-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-input, .form-textarea, .submit-button {
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.form-input:focus, .form-textarea:focus {
+  outline: none;
+  border-color: #333;
+}
+
+.submit-button {
+  background-color: #333;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+  background-color: #555;
+}
+
+/* Seção de contato */
+.location-map {
+  width: 100%;
+  max-width: 600px;
+  margin: 1rem 0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#contact-info p {
+  margin: 0.5rem 0;
+  color: #333;
+}
+
+/* Rodapé */
+#footer {
+
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+#footer p {
+  margin: 0.5rem 0;
+}
+
+.social-link {
+  margin: 0 0.5rem;
+  display: inline-block;
+}
+
+.social-link img {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s;
+}
+
+.social-link img:hover {
+  transform: scale(1.2);
+}
+
+.legal-link {
+  color: #aaa;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.legal-link:hover {
+  color: #fff;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  #nav-menu {
+    flex-direction: column;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  #main-content {
+    padding: 1rem;
+  }
+
+  .news-image {
+    width: 100px;
+    height: auto;
+  }
+}
+
+.news-image {
+  width: 300px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.news-image:hover {
+  transform: scale(1.03);
+  transition: transform 0.3s;
+}
+
+#news-container {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+#news-buttons {
+  margin-top: 10px;
+}
+#news-buttons button {
+  padding: 5px 10px;
+  margin: 0 10px;
+  border: none;
+  background-color: #444;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#news-buttons button:hover {
+  background-color: #222;
+}
+.news-image {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Estilos para el formulario de presupuesto */
+.cita-previa {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+fieldset {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+legend {
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 0 10px;
+    color: #333;
+}
+
+.form-input {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.error-message {
+    color: #ff0000;
+    font-size: 0.9em;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.checkbox-group {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.checkbox-group label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.servicios, .extras {
+    margin-bottom: 20px;
+}
+
+.plazo {
+    margin: 20px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.entrega-nota {
+    font-size: 0.9em;
+    color: #666;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+.descuento-info {
+    font-size: 0.9em;
+    color: #666;
+    margin-top: 5px;
+}
+
+.presupuesto-total {
+    background-color: #f5f5f5;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+#presupuesto-final {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.form-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.submit-button, .reset-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.submit-button {
+    background-color: #2ecc71;
+    color: white;
+}
+
+.submit-button:hover {
+    background-color: #27ae60;
+}
+
+.reset-button {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.reset-button:hover {
+    background-color: #c0392b;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 15px 0;
+    cursor: pointer;
+}
+
+/* Estilos responsivos */
+@media (max-width: 600px) {
+    .checkbox-group {
+        grid-template-columns: 1fr;
+    }
+    
+    .form-buttons {
+        flex-direction: column;
+    }
+    
+    .submit-button, .reset-button {
+        width: 100%;
+    }
+    
+    .tooltip {
+        width: 200px;
+    }
+}
+
+/* Estilos para el contenedor de productos */
+.productos-container {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.productos-image-container {
+    max-width: 450px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.productos-image-container:hover {
+    transform: scale(1.02);
+}
+
+.productos-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.productos-link {
+    display: block;
+    text-decoration: none;
+}
+
+/* Estilos para tooltips */
+.tooltip-container {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip {
+    visibility: hidden;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 6px;
+    width: 250px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    font-size: 0.9em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.tooltip::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #333 transparent transparent transparent;
+}
+
+.tooltip-container:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}

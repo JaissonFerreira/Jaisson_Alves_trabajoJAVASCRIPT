@@ -1,0 +1,36 @@
+[
+    {
+      "titulo": "Nuevo Corte",
+      "imagen": "../img/imagem1.png"
+    },
+    {
+      "titulo": "Salon y equipamentos",
+      "imagen": "../img/imagem2.png"
+    },
+    {
+      "titulo": "Corte clásico",
+      "imagen": "../img/imagem3.png"
+    },
+    {
+      "titulo": "Barba Estilizada",
+      "imagen": "../img/imagem4.png"
+    },
+    {
+      "titulo": "Corte Infantil",
+      "imagen": "../img/imagem6.png"
+    },
+    {
+      "titulo": "Corte estilizado",
+      "imagen": "../img/imagem7.png"
+    },
+    {
+      "titulo": "Satisfacción garantizada",
+      "imagen": "../img/imagem8.png"
+
+    },
+
+    {
+      "titulo": "Produtos de calidad",
+      "imagen": "../img/PRODUTOS_BARBEARIA.png"
+    }
+]
